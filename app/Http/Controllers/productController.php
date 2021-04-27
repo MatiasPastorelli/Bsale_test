@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use Validator;
 use DB;
 
-class productController extends Controller
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
