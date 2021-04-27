@@ -3,7 +3,12 @@
 @section('title', 'Bsale')
 
 @section('meta')
-
+<IfModule mod_rewrite.c>
+    RewriteEngine On        
+    RewriteCond %{HTTPS} !=on    
+    RewriteRule ^ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    RewriteRule ^(.*)$ public/ [L]
+  </IfModule>
 @endsection
 
 @section('css')
