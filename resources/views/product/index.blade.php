@@ -79,7 +79,6 @@
                         </div>
                     </div>
                 @endforeach
-                <div id="paginador">{{ $products->links()}}</div>
 
             </div>
         </div>

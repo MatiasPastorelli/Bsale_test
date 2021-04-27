@@ -37,7 +37,7 @@ class ProductController extends Controller
             }
         }
 
-        $products = $products->paginate(8);
+        $products = $products->get();
 
         return view('product.index',compact('products','categorys'));
     }
