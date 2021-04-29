@@ -18,6 +18,7 @@
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="width: 450px; padding: 0px; border-color: #9DA0A2">
+                        <!-- Vista para mostrar los productos del carrito -->
                         <ul class="list-group" style="margin: 40px;">
                             @include('carritoMenu.carritoDrop')
                         </ul>
