@@ -1,13 +1,45 @@
 Aplicacion para prueba Bsale 
 
 
-Para este desarrollo use Laravel que es un framework de php,
-un solo controlador que lista los productos dependiendo de lo que busca el usuario,
-el carrito de compras no es funcional debido a que no pedian que lo fuera, de haber sido asi,
-podria haberlo hecho, para el diseño use una plantilla de bootstrap.
+
+instalacion:
+
+Un sotfware para levantar un proyecto laravel, en mi caso use Laragon 
+https://laragon.org/
 
 
-Los productos listados son los que venian en la BD entregada por Bsale.
+En el caso de instalar lagaron, copiar el proyecto en la ruta 
+laragon\www\
+
+Lueno levantar Mysql y Apache desde laragon
+
+Para iniciar el proyecto se necesita cambiar el .env.example a .env
+Crear una key con el comando 
+
+- php artisan key:generate
+
+Finalmente iniciar el proyecto.
+
+
+Detalle de la prueba:
+
+El proyecto muestra una lista de productos, los productos vienen de una BD entregada por Bsale
+este contiene un buscador para filtrar los productos.
+
+Los productos muestran su imagen correspondiente, nombre y precio.
+Los productos que no tienen imagen, mostraran una imagen en blanco.
+Icono de carro de compras.
+
+El carro de compras no es funcional.
+
+
+Herramientas usadas en esta prueba:
+
+* PHP - Lenguaje de programacion.
+* Laravel - Framework de PHP.
+* Toastr - Libreria para las alertas.
+
+
 
 
 

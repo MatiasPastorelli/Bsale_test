@@ -32,6 +32,10 @@
 <div class="slider-form inner-page-form" style="margin-top: 90px">
     <div class="container">
        <h1 class="text-center mb-5">Busca tu producto</h1>
+       <!--
+            Formulario que busca los productos 
+            @method(post)
+        -->   
        <form action="{{ asset('/')}}" method="post">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
           <div class="row no-gutters">
@@ -46,6 +50,9 @@
                    <div class="input-group-addon"></div>
                    <select class="form-control custom-select" name="category">
                     <option disabled="" value="" selected>Todas las Categorias</option>
+                    <!--
+                        Lista categorias <array[]> categorys
+                    -->
                     @foreach ($categorys as $category)
                     <option value="{{$category->id}}">{{$category->name}}</option>
                     @endforeach
@@ -67,8 +74,7 @@
         <div class="col-lg-12">
             <div class="row">
                 <!--
-                    Lista de productos
-                    @return <array[]> products
+                    Lista de productos  <array[]> products
                 -->   
                 @foreach($products as $pro)
                     <div class="col-lg-3">
@@ -104,6 +110,9 @@
 </div>
 
 @jquery
+<!--
+Libreria para alertas!
+-->
 @toastr_js
 @toastr_render
 @endsection

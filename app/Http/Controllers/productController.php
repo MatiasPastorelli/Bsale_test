@@ -63,11 +63,15 @@ class ProductController extends Controller
                 }
             }
 
+            
+            return view('product.index',compact('products','categorys'));
+
        } catch (Exception $e) {
+           /**
+            * retornara un error
+            */
             toastr()->error($e->getMessage());
             return redirect('/');
        }
-
-        return view('product.index',compact('products','categorys'));
     }
 }
