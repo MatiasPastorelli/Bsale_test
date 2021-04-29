@@ -38,7 +38,7 @@ Herramientas usadas en esta prueba:
 * PHP - Lenguaje de programacion.
 * Laravel - Framework de PHP.
 * Toastr - Libreria para las alertas.
-
+* Heroku - Servidor para subir el proyecto.
 
 
 
