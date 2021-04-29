@@ -34,7 +34,6 @@
        <h1 class="text-center mb-5">Busca tu producto</h1>
        <!--
             Formulario que busca los productos 
-            @method(post)
         -->   
        <form action="{{ asset('/')}}" method="post">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
